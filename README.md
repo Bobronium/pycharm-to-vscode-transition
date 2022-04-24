@@ -21,10 +21,10 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
     - [Add line below and move cursor down](#add-line-below-and-move-cursor-down)
     - [Comment line and move cursor down](#comment-line-and-move-cursor-down)
 - [Extensions](#extensions)
-    - [IntelliJ IDEA Keybinding](#intellij-idea-self-explanatory)
-    - [PyColonize — automatically add colon at the end of the line](#pycolonizehttpsmarketplacevisualstudiocomitemsitemnamefertigtpycolonize--automatically-add-colon-at-the-end-of-the-line)
+    - [IntelliJ IDEA Keybinding](#intellij-idea-keybindings)
+    - [PyColonize — automatically add colon at the end of the line](#pycolonize--automatically-add-colon-at-the-end-of-the-line)
   - [Helpers](#helpers)
-    - [multi-command](#multi-commandhttpsmarketplacevisualstudiocomitemsitemnameryuta46multi-command--for-comment-line-and-move-cursor-downcomment-line-and-move-cursor-down)
+    - [multi-command](#multi-command--for-comment-line-and-move-cursor-down)
 
 # Settings
 ### Enable indexing (better auto -suggestions and -import)
@@ -110,7 +110,7 @@ Remove it's bind for `⌘` `K` as it's a special combination in VSCode
 
 
 # Extensions
-### [IntelliJ IDEA Keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings) — self explanatory
+### [IntelliJ IDEA Keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
 See [Keybinds](#keybinds) to learn more.
 ### [PyColonize](https://marketplace.visualstudio.com/items?itemName=fertigt.pycolonize) — automatically add colon at the end of the line
 <img align="left" width="200" alt="animated" src="https://user-images.githubusercontent.com/36469655/164995767-a37163c3-ddf0-400f-a45c-e85e5c798c40.gif">
