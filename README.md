@@ -5,6 +5,26 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 - `⌃` — Ctrl
 - `⌥` — Option / Alt
 - `⇧` — Shift
+# Table of contents
+
+- [pycharm-to-vscode-transition](#pycharm-to-vscode-transition)
+- [Settings](#settings)
+    - [Enable indexing (better auto -suggestions and -import)](#enable-indexing-better-auto--suggestions-and--import)
+    - [Increase depths for import suggestions](#increase-depths-for-import-suggestions)
+    - [Make speed scroll closer to one in PyCharm](#make-speed-scroll-closer-to-one-in-pycharm)
+    - [Make line height (interval between the lines) closer to one in PyCharm](#make-line-height-interval-between-the-lines-closer-to-one-in-pycharm)
+    - [Enable auto save for files](#enable-auto-save-for-files)
+    - [Add project root, src and tests dir to `PYTHONPATH` by default](#add-project-root-src-and-tests-dir-to-pythonpath-by-default)
+    - [Use black formatter by default](#use-black-formatter-by-default)
+- [Keybinds](#keybinds)
+    - [Fix IntelliJ IDEA Keybinds extension](#fix-intellij-idea-keybinds-extension)
+    - [Add line below and move cursor down](#add-line-below-and-move-cursor-down)
+    - [Comment line and move cursor down](#comment-line-and-move-cursor-down)
+- [Extensions](#extensions)
+    - [IntelliJ IDEA Keybinding](#intellij-idea-self-explanatory)
+    - [PyColonize — automatically add colon at the end of the line](#pycolonizehttpsmarketplacevisualstudiocomitemsitemnamefertigtpycolonize--automatically-add-colon-at-the-end-of-the-line)
+  - [Helpers](#helpers)
+    - [multi-command](#multi-commandhttpsmarketplacevisualstudiocomitemsitemnameryuta46multi-command--for-comment-line-and-move-cursor-downcomment-line-and-move-cursor-down)
 
 # Settings
 ### Enable indexing (better auto -suggestions and -import)
@@ -50,9 +70,48 @@ Tested on MacBook's touchpad
 ```
 **Note:** requires [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) extension.
 
+# Keybinds
+### Fix IntelliJ IDEA Keybinds extension
+Remove it's bind for `⌘` `K` as it's a special combination in VSCode
+```json
+      {
+        "key": "cmd+k",
+        "command": "-git.commitAll",
+        "when": "!inDebugMode && !terminalFocus"
+      }
+```
+### Add line below and move cursor down
+```json
+      {
+        "key": "cmd+enter",
+        "command": "editor.action.insertLineAfter",
+        "when": "editorTextFocus && !editorReadonly && editorLangId != 'python'"
+      },
+```
+**Note:** for auto colons see [Extensions](#extensions) -> PyColonize
+
+### Comment line and move cursor down
+```json
+    {
+        "key": "cmd+/",
+        "command": "extension.multiCommand.execute",
+        "args": {
+          "sequence": [
+            "editor.action.commentLine",
+            "cursorDown"
+          ]
+        },
+        "when": "editorTextFocus && !editorReadonly"
+      }
+```
+**Note:** requires [multi-command](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command) extension.
+
+
 
 
 # Extensions
+### [IntelliJ IDEA Keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings) — self explanatory
+See [Keybinds](#keybinds) to learn more.
 ### [PyColonize](https://marketplace.visualstudio.com/items?itemName=fertigt.pycolonize) — automatically add colon at the end of the line
 <img align="left" width="200" alt="animated" src="https://user-images.githubusercontent.com/36469655/164995767-a37163c3-ddf0-400f-a45c-e85e5c798c40.gif">
 
@@ -68,3 +127,6 @@ By default shortcut will work only with Python files. If you want to mimic this 
         "when": "editorTextFocus && !editorReadonly && editorLangId != 'python'"
       }
 ```
+
+## Helpers
+### [multi-command](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command) — for [Comment line and move cursor down](#comment-line-and-move-cursor-down)
