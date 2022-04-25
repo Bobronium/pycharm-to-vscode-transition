@@ -57,9 +57,17 @@ Tested on MacBook's touchpad
 
 ### Add project root, src and tests dir to `PYTHONPATH` by default
 ```json
-"terminal.integrated.env.osx": {
-  "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/tests"
-}
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/tests"
+    },
+    "code-runner.executorMap": {
+        "python": "PYTHONPATH=${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/tests ${pythonPath} -u ${fullFileName}"
+    },
+    "python.envFile": "~/.vscode/.env",
+```
+Then create `~/.vscode/.env`:
+```bash
+PYTHONPATH=${env:PROJ_DIR}:${env:PROJ_DIR}/src:${env:PROJ_DIR}/tests:${env:PYTHONPATH}
 ```
 **Note:** change colons to semicolons on Windows and `.osx` to `.<your system>`
 ### Use black formatter by default
