@@ -1,3 +1,6 @@
+# pycharm-to-vscode-transition
+Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
@@ -22,9 +25,6 @@
     - [multi-command — for Comment line and move cursor down](#multi-command--for-comment-line-and-move-cursor-down)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# pycharm-to-vscode-transition
-Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 
 - `⌘` — Command (Ctrl on Windows/Linux)
 - `⌃` — Ctrl
