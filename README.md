@@ -57,30 +57,30 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 
 ### Enable indexing (better auto -suggestions and -import)
 ```js
-"python.analysis.indexing": true,
+    "python.analysis.indexing": true,
 ```
 ### Increase depths for import suggestions
 ```js
-"python.analysis.packageIndexDepths":[
-        ["", 2],
-        ["package_name", 3],
-    ]
+    "python.analysis.packageIndexDepths":[
+            ["", 2],
+            ["package_name", 3],
+    ],
 ```
 **Note:** Requires Pylance, **explanation:** https://github.com/microsoft/pylance-release/issues/291#issuecomment-1015880138
 ### Make speed scroll closer to one in PyCharm
 ```js
-"editor.mouseWheelScrollSensitivity": 0.35,
+    "editor.mouseWheelScrollSensitivity": 0.35,
 ```
 Tested on MacBook's touchpad
 
 ### Make line height (interval between the lines) closer to one in PyCharm
 ```js
-"editor.lineHeight": 1.85,
+    "editor.lineHeight": 1.85,
 ```
 
 ### Enable auto save for files
 ```js
-"files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
 ```
 
 ### Add project root, src and tests dir to `PYTHONPATH` by default
@@ -101,7 +101,7 @@ PYTHONPATH=${env:PROJ_DIR}:${env:PROJ_DIR}/src:${env:PROJ_DIR}/tests:${env:PYTHO
 ### Use black formatter by default
 ```js
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "ms-python.black-formatter",
     },
 ```
 **Note:** requires [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) extension.
@@ -110,19 +110,19 @@ PYTHONPATH=${env:PROJ_DIR}:${env:PROJ_DIR}/src:${env:PROJ_DIR}/tests:${env:PYTHO
 ### Fix IntelliJ IDEA Keybinds extension
 Remove it's bind for `⌘` `K` as it's a special combination in VSCode
 ```js
-      {
+    {
         "key": "cmd+k",
         "command": "-git.commitAll",
-        "when": "!inDebugMode && !terminalFocus"
-      }
+        "when": "!inDebugMode && !terminalFocus",
+    },
 ```
 ### Add line below and move cursor down
 ```js
-      {
+    {
         "key": "cmd+enter",
         "command": "editor.action.insertLineAfter",
-        "when": "editorTextFocus && !editorReadonly && editorLangId != 'python'"
-      },
+        "when": "editorTextFocus && !editorReadonly && editorLangId != 'python'",
+    },
 ```
 **Note:** for auto colons see [Extensions](#extensions) -> PyColonize
 
@@ -138,7 +138,7 @@ Remove it's bind for `⌘` `K` as it's a special combination in VSCode
           ]
         },
         "when": "editorTextFocus && !editorReadonly"
-      }
+      },
 ```
 **Note:** requires [multi-command](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command) extension.
 
@@ -157,11 +157,11 @@ See [Keybinds](#keybinds) to learn more.
 
 By default shortcut will work only with Python files. If you want to mimic this behaviour in other languages as well, but without a colon, add following to `keybindings.json`:
 ```js
-      {
+    {
         "key": "cmd+enter",
         "command": "editor.action.insertLineAfter",
         "when": "editorTextFocus && !editorReadonly && editorLangId != 'python'"
-      }
+    },
 ```
 
 ## Helpers
