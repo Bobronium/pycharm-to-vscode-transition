@@ -73,6 +73,12 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 ```
 Tested on MacBook's touchpad
 
+### Use [JetBrains Mono](https://www.jetbrains.com/lp/mono/) Font
+```js
+    "editor.fontFamily": "JetBrains Mono",
+```
+**Note:** download and install it on your system first
+
 ### Make line height (interval between the lines) closer to one in PyCharm
 ```js
     "editor.lineHeight": 1.85,
