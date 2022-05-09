@@ -22,7 +22,7 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
     - [IntelliJ IDEA Keybindings](#intellij-idea-keybindings)
     - [PyColonize — automatically add colon at the end of the line](#pycolonize--automatically-add-colon-at-the-end-of-the-line)
   - [Helpers](#helpers)
-    - [multi-command — for [Comment line and move cursor down](#comment-line-and-move-cursor-down)](#multi-command--for-comment-line-and-move-cursor-down)
+    - [multi-command — for Comment line and move cursor down](#multi-command--for-comment-line-and-move-cursor-down)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
