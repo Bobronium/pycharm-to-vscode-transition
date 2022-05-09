@@ -31,26 +31,6 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 - `⌃` — Ctrl
 - `⌥` — Option / Alt
 - `⇧` — Shift
-# Table of contents
-
-- [pycharm-to-vscode-transition](#pycharm-to-vscode-transition)
-- [Settings](#settings)
-    - [Enable indexing (better auto -suggestions and -import)](#enable-indexing-better-auto--suggestions-and--import)
-    - [Increase depths for import suggestions](#increase-depths-for-import-suggestions)
-    - [Make speed scroll closer to one in PyCharm](#make-speed-scroll-closer-to-one-in-pycharm)
-    - [Make line height (interval between the lines) closer to one in PyCharm](#make-line-height-interval-between-the-lines-closer-to-one-in-pycharm)
-    - [Enable auto save for files](#enable-auto-save-for-files)
-    - [Add project root, src and tests dir to `PYTHONPATH` by default](#add-project-root-src-and-tests-dir-to-pythonpath-by-default)
-    - [Use black formatter by default](#use-black-formatter-by-default)
-- [Keybinds](#keybinds)
-    - [Fix IntelliJ IDEA Keybinds extension](#fix-intellij-idea-keybinds-extension)
-    - [Add line below and move cursor down](#add-line-below-and-move-cursor-down)
-    - [Comment line and move cursor down](#comment-line-and-move-cursor-down)
-- [Extensions](#extensions)
-    - [IntelliJ IDEA Keybinding](#intellij-idea-keybindings)
-    - [PyColonize — automatically add colon at the end of the line](#pycolonize--automatically-add-colon-at-the-end-of-the-line)
-  - [Helpers](#helpers)
-    - [multi-command](#multi-command--for-comment-line-and-move-cursor-down)
 
 # Settings
 ### Enable indexing (better auto -suggestions and -import)
