@@ -10,6 +10,7 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
     - [Enable indexing (better auto -suggestions and -import)](#enable-indexing-better-auto--suggestions-and--import)
     - [Increase depths for import suggestions](#increase-depths-for-import-suggestions)
     - [Make speed scroll closer to one in PyCharm](#make-speed-scroll-closer-to-one-in-pycharm)
+    - [Use JetBrains Mono Font](#use-jetbrains-mono-font)
     - [Make line height (interval between the lines) closer to one in PyCharm](#make-line-height-interval-between-the-lines-closer-to-one-in-pycharm)
     - [Enable auto save for files](#enable-auto-save-for-files)
     - [Add project root, src and tests dir to `PYTHONPATH` by default](#add-project-root-src-and-tests-dir-to-pythonpath-by-default)
