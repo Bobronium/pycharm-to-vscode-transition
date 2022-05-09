@@ -56,11 +56,11 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 
 
 ### Enable indexing (better auto -suggestions and -import)
-```json
+```js
 "python.analysis.indexing": true,
 ```
 ### Increase depths for import suggestions
-```json
+```js
 "python.analysis.packageIndexDepths":[
         ["", 2],
         ["package_name", 3],
@@ -68,23 +68,23 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 ```
 **Note:** Requires Pylance, **explanation:** https://github.com/microsoft/pylance-release/issues/291#issuecomment-1015880138
 ### Make speed scroll closer to one in PyCharm
-```json
+```js
 "editor.mouseWheelScrollSensitivity": 0.35,
 ```
 Tested on MacBook's touchpad
 
 ### Make line height (interval between the lines) closer to one in PyCharm
-```json
+```js
 "editor.lineHeight": 1.85,
 ```
 
 ### Enable auto save for files
-```json
+```js
 "files.autoSave": "afterDelay"
 ```
 
 ### Add project root, src and tests dir to `PYTHONPATH` by default
-```json
+```js
     "terminal.integrated.env.osx": {
         "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/tests"
     },
@@ -99,7 +99,7 @@ PYTHONPATH=${env:PROJ_DIR}:${env:PROJ_DIR}/src:${env:PROJ_DIR}/tests:${env:PYTHO
 ```
 **Note:** change colons to semicolons on Windows and `.osx` to `.<your system>`
 ### Use black formatter by default
-```json
+```js
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
@@ -109,7 +109,7 @@ PYTHONPATH=${env:PROJ_DIR}:${env:PROJ_DIR}/src:${env:PROJ_DIR}/tests:${env:PYTHO
 # Keybinds
 ### Fix IntelliJ IDEA Keybinds extension
 Remove it's bind for `⌘` `K` as it's a special combination in VSCode
-```json
+```js
       {
         "key": "cmd+k",
         "command": "-git.commitAll",
@@ -117,7 +117,7 @@ Remove it's bind for `⌘` `K` as it's a special combination in VSCode
       }
 ```
 ### Add line below and move cursor down
-```json
+```js
       {
         "key": "cmd+enter",
         "command": "editor.action.insertLineAfter",
@@ -127,7 +127,7 @@ Remove it's bind for `⌘` `K` as it's a special combination in VSCode
 **Note:** for auto colons see [Extensions](#extensions) -> PyColonize
 
 ### Comment line and move cursor down
-```json
+```js
     {
         "key": "cmd+/",
         "command": "extension.multiCommand.execute",
@@ -156,7 +156,7 @@ See [Keybinds](#keybinds) to learn more.
 - `⌘` `⌥` `Enter` — add colon and stay at the same position
 
 By default shortcut will work only with Python files. If you want to mimic this behaviour in other languages as well, but without a colon, add following to `keybindings.json`:
-```json
+```js
       {
         "key": "cmd+enter",
         "command": "editor.action.insertLineAfter",
