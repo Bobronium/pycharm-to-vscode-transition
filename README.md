@@ -1,9 +1,10 @@
 # pycharm-to-vscode-transition
+
 Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-# Table of Contents
+## Table of Contents
 
 - [Settings](#settings)
     - [Linting highlights](#linting-highlights)
@@ -16,12 +17,12 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
     - [Add project root, src and tests dir to `PYTHONPATH` by default](#add-project-root-src-and-tests-dir-to-pythonpath-by-default)
     - [Use black formatter by default](#use-black-formatter-by-default)
 - [Keybinds](#keybinds)
-    - [Fix IntelliJ IDEA Keybinds extension](#fix-intellij-idea-keybinds-extension)
-    - [Add line below and move cursor down](#add-line-below-and-move-cursor-down)
-    - [Comment line and move cursor down](#comment-line-and-move-cursor-down)
+  - [Fix IntelliJ IDEA Keybinds extension](#fix-intellij-idea-keybinds-extension)
+  - [Add line below and move cursor down](#add-line-below-and-move-cursor-down)
+  - [Comment line and move cursor down](#comment-line-and-move-cursor-down)
 - [Extensions](#extensions)
-    - [IntelliJ IDEA Keybindings](#intellij-idea-keybindings)
-    - [PyColonize — automatically add colon at the end of the line](#pycolonize--automatically-add-colon-at-the-end-of-the-line)
+  - [IntelliJ IDEA Keybindings](#intellij-idea-keybindings)
+  - [PyColonize — automatically add colon at the end of the line](#pycolonize--automatically-add-colon-at-the-end-of-the-line)
   - [Helpers](#helpers)
     - [multi-command — for Comment line and move cursor down](#multi-command--for-comment-line-and-move-cursor-down)
 
@@ -32,8 +33,10 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 - `⌥` — Option / Alt
 - `⇧` — Shift
 
-# Settings
+## Settings
+
 ### Linting highlights
+
 ```js
     "workbench.colorCustomizations": {
         "editorWarning.background": "#52503A",
@@ -55,42 +58,53 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
     "python.linting.pycodestyleCategorySeverity.E": "Information",
 ```
 
-
 ### Enable indexing (better auto -suggestions and -import)
+
 ```js
     "python.analysis.indexing": true,
 ```
+
 ### Increase depths for import suggestions
+
 ```js
     "python.analysis.packageIndexDepths":[
             ["", 2],
             ["package_name", 3],
     ],
 ```
-**Note:** Requires Pylance, **explanation:** https://github.com/microsoft/pylance-release/issues/291#issuecomment-1015880138
+
+**Note:** Requires Pylance, **explanation:** <https://github.com/microsoft/pylance-release/issues/291#issuecomment-1015880138>
+
 ### Make speed scroll closer to one in PyCharm
+
 ```js
     "editor.mouseWheelScrollSensitivity": 0.35,
 ```
+
 Tested on MacBook's touchpad
 
 ### Use [JetBrains Mono](https://www.jetbrains.com/lp/mono/) Font
+
 ```js
     "editor.fontFamily": "JetBrains Mono",
 ```
+
 **Note:** download and install it on your system first
 
 ### Make line height (interval between the lines) closer to one in PyCharm
+
 ```js
     "editor.lineHeight": 1.85,
 ```
 
 ### Enable auto save for files
+
 ```js
     "files.autoSave": "afterDelay",
 ```
 
 ### Add project root, src and tests dir to `PYTHONPATH` by default
+
 ```js
     "terminal.integrated.env.osx": {
         "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/tests"
@@ -100,22 +114,31 @@ Tested on MacBook's touchpad
     },
     "python.envFile": "~/.vscode/.env",
 ```
+
 Then create `~/.vscode/.env`:
+
 ```bash
 PYTHONPATH=${env:PROJ_DIR}:${env:PROJ_DIR}/src:${env:PROJ_DIR}/tests:${env:PYTHONPATH}
 ```
+
 **Note:** change colons to semicolons on Windows and `.osx` to `.<your system>`
+
 ### Use black formatter by default
+
 ```js
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
     },
 ```
+
 **Note:** requires [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) extension.
 
-# Keybinds
+## Keybinds
+
 ### Fix IntelliJ IDEA Keybinds extension
+
 Remove it's bind for `⌘` `K` as it's a special combination in VSCode
+
 ```js
     {
         "key": "cmd+k",
@@ -123,7 +146,9 @@ Remove it's bind for `⌘` `K` as it's a special combination in VSCode
         "when": "!inDebugMode && !terminalFocus",
     },
 ```
+
 ### Add line below and move cursor down
+
 ```js
     {
         "key": "cmd+enter",
@@ -131,9 +156,11 @@ Remove it's bind for `⌘` `K` as it's a special combination in VSCode
         "when": "editorTextFocus && !editorReadonly && editorLangId != 'python'",
     },
 ```
+
 **Note:** for auto colons see [Extensions](#extensions) -> PyColonize
 
 ### Comment line and move cursor down
+
 ```js
     {
         "key": "cmd+/",
@@ -147,15 +174,17 @@ Remove it's bind for `⌘` `K` as it's a special combination in VSCode
         "when": "editorTextFocus && !editorReadonly"
       },
 ```
+
 **Note:** requires [multi-command](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command) extension.
 
+## Extensions
 
-
-
-# Extensions
 ### [IntelliJ IDEA Keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
+
 See [Keybinds](#keybinds) to learn more.
+
 ### [PyColonize](https://marketplace.visualstudio.com/items?itemName=fertigt.pycolonize) — automatically add colon at the end of the line
+
 <img align="left" width="200" alt="animated" src="https://user-images.githubusercontent.com/36469655/164995767-a37163c3-ddf0-400f-a45c-e85e5c798c40.gif">
 
 - `⌘` `Enter` — add colon and continue on the new line
@@ -163,6 +192,7 @@ See [Keybinds](#keybinds) to learn more.
 - `⌘` `⌥` `Enter` — add colon and stay at the same position
 
 By default shortcut will work only with Python files. If you want to mimic this behaviour in other languages as well, but without a colon, add following to `keybindings.json`:
+
 ```js
     {
         "key": "cmd+enter",
@@ -171,5 +201,6 @@ By default shortcut will work only with Python files. If you want to mimic this 
     },
 ```
 
-## Helpers
-### [multi-command](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command) — for [Comment line and move cursor down](#comment-line-and-move-cursor-down)
+### Helpers
+
+#### [multi-command](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command) — for [Comment line and move cursor down](#comment-line-and-move-cursor-down)

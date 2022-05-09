@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: technote-space/toc-generator@v4
         with:
-          TOC_TITLE: "# Table of Contents"
+          TOC_TITLE: "## Table of Contents"
           COMMIT_MESSAGE: "📖 Update Table of Contents"
           COMMIT_NAME: "${github.workflow}"
