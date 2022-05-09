@@ -1,3 +1,29 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [pycharm-to-vscode-transition](#pycharm-to-vscode-transition)
+- [Table of contents](#table-of-contents)
+- [Settings](#settings)
+    - [Enable indexing (better auto -suggestions and -import)](#enable-indexing-better-auto--suggestions-and--import)
+    - [Increase depths for import suggestions](#increase-depths-for-import-suggestions)
+    - [Make speed scroll closer to one in PyCharm](#make-speed-scroll-closer-to-one-in-pycharm)
+    - [Make line height (interval between the lines) closer to one in PyCharm](#make-line-height-interval-between-the-lines-closer-to-one-in-pycharm)
+    - [Enable auto save for files](#enable-auto-save-for-files)
+    - [Add project root, src and tests dir to `PYTHONPATH` by default](#add-project-root-src-and-tests-dir-to-pythonpath-by-default)
+    - [Use black formatter by default](#use-black-formatter-by-default)
+- [Keybinds](#keybinds)
+    - [Fix IntelliJ IDEA Keybinds extension](#fix-intellij-idea-keybinds-extension)
+    - [Add line below and move cursor down](#add-line-below-and-move-cursor-down)
+    - [Comment line and move cursor down](#comment-line-and-move-cursor-down)
+- [Extensions](#extensions)
+    - [IntelliJ IDEA Keybindings](#intellij-idea-keybindings)
+    - [PyColonize — automatically add colon at the end of the line](#pycolonize--automatically-add-colon-at-the-end-of-the-line)
+  - [Helpers](#helpers)
+    - [multi-command — for Comment line and move cursor down](#multi-command--for-comment-line-and-move-cursor-down)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # pycharm-to-vscode-transition
 Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 
