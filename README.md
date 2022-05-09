@@ -3,9 +3,8 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
+# Table of Contents
 
-- [pycharm-to-vscode-transition](#pycharm-to-vscode-transition)
 - [Settings](#settings)
     - [Enable indexing (better auto -suggestions and -import)](#enable-indexing-better-auto--suggestions-and--import)
     - [Increase depths for import suggestions](#increase-depths-for-import-suggestions)
