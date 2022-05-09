@@ -3,7 +3,6 @@
 **Table of Contents**
 
 - [pycharm-to-vscode-transition](#pycharm-to-vscode-transition)
-- [Table of contents](#table-of-contents)
 - [Settings](#settings)
     - [Enable indexing (better auto -suggestions and -import)](#enable-indexing-better-auto--suggestions-and--import)
     - [Increase depths for import suggestions](#increase-depths-for-import-suggestions)
