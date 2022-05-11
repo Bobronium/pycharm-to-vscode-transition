@@ -177,6 +177,18 @@ Remove it's bind for `⌘` `K` as it's a special combination in VSCode
 
 **Note:** requires [multi-command](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command) extension.
 
+### Paste and indent
+
+```js
+    {
+        "key": "cmd+v",
+        "command": "pyPasteIndent.pasteIndent",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'python'"
+    },
+```
+
+**Note:** requires [Python Paste And Indent](https://marketplace.visualstudio.com/items?itemName=hyesun.py-paste-indent) extension.
+
 ## Extensions
 
 ### [IntelliJ IDEA Keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
@@ -200,6 +212,8 @@ By default shortcut will work only with Python files. If you want to mimic this 
         "when": "editorTextFocus && !editorReadonly && editorLangId != 'python'"
     },
 ```
+
+### [Python Paste And Indent](https://marketplace.visualstudio.com/items?itemName=hyesun.py-paste-indent)
 
 ### Helpers
 
