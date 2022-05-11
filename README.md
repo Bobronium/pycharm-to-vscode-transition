@@ -20,9 +20,11 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
   - [Fix IntelliJ IDEA Keybinds extension](#fix-intellij-idea-keybinds-extension)
   - [Add line below and move cursor down](#add-line-below-and-move-cursor-down)
   - [Comment line and move cursor down](#comment-line-and-move-cursor-down)
+  - [Paste and indent](#paste-and-indent)
 - [Extensions](#extensions)
   - [IntelliJ IDEA Keybindings](#intellij-idea-keybindings)
   - [PyColonize — automatically add colon at the end of the line](#pycolonize--automatically-add-colon-at-the-end-of-the-line)
+  - [Python Paste And Indent](#python-paste-and-indent)
   - [Helpers](#helpers)
     - [multi-command — for Comment line and move cursor down](#multi-command--for-comment-line-and-move-cursor-down)
 
