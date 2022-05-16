@@ -124,11 +124,21 @@ Tested on MacBook's touchpad
 
 **Note:** download and install it on your system first
 
-### Make line height (interval between the lines) closer to one in PyCharm
+### Adjust line height
 
 ```js
-    "editor.lineHeight": 1.85,
+    "editor.lineHeight": 1.7, // matches PyCharm with JetBrains Mono
 ```
+
+**Note:** tested with [JetBrains Mono font](#use-jetbrains-mono-font)
+
+### Adjust letter spacing
+
+```js
+    "editor.letterSpacing": 0.4, // matches PyCharm with JetBrains Mono
+```
+
+**Note:** tested with [JetBrains Mono font](#use-jetbrains-mono-font)
 
 ### Enable auto save for files
 
