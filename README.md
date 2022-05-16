@@ -6,6 +6,12 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
+- [Extensions](#extensions)
+  - [IntelliJ IDEA Keybindings](#intellij-idea-keybindings)
+  - [PyColonize — automatically add colon at the end of the line](#pycolonize--automatically-add-colon-at-the-end-of-the-line)
+  - [Python Paste And Indent](#python-paste-and-indent)
+  - [Helpers](#helpers)
+    - [multi-command — for Comment line and move cursor down](#multi-command--for-comment-line-and-move-cursor-down)
 - [Settings](#settings)
   - [Linting highlights](#linting-highlights)
   - [Enable indexing (better auto -suggestions and -import)](#enable-indexing-better-auto--suggestions-and--import)
@@ -21,12 +27,6 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
   - [Add line below and move cursor down](#add-line-below-and-move-cursor-down)
   - [Comment line and move cursor down](#comment-line-and-move-cursor-down)
   - [Paste and indent](#paste-and-indent)
-- [Extensions](#extensions)
-  - [IntelliJ IDEA Keybindings](#intellij-idea-keybindings)
-  - [PyColonize — automatically add colon at the end of the line](#pycolonize--automatically-add-colon-at-the-end-of-the-line)
-  - [Python Paste And Indent](#python-paste-and-indent)
-  - [Helpers](#helpers)
-    - [multi-command — for Comment line and move cursor down](#multi-command--for-comment-line-and-move-cursor-down)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
