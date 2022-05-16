@@ -7,7 +7,7 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 ## Table of Contents
 
 - [Extensions](#extensions)
-  - [Darcula Theme from Pycharm — Semantic & Linting Highlighting, Templates & RegEx support and more.](#darcula-theme-from-pycharm--semantic--linting-highlighting-templates--regex-support-and-more)
+  - [Darcula Theme from Pycharm](#darcula-theme-from-pycharm)
   - [IntelliJ IDEA Keybindings](#intellij-idea-keybindings)
   - [PyColonize — automatically add colon at the end of the line](#pycolonize--automatically-add-colon-at-the-end-of-the-line)
   - [Python Paste And Indent](#python-paste-and-indent)
