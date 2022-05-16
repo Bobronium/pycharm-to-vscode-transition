@@ -38,7 +38,9 @@ Make a smooth transition from slow and heavy PyCharm to fast and light VSCode.
 
 
 ## Extensions
-### [Darcula Theme from Pycharm](https://marketplace.visualstudio.com/items?itemName=Bobronium.darcula-from-pycharm) — Semantic & Linting Highlighting, Templates & RegEx support and more.
+### [Darcula Theme from Pycharm](https://marketplace.visualstudio.com/items?itemName=Bobronium.darcula-from-pycharm)
+
+Semantic & Linting Highlighting, Templates & RegEx support and more.
 
 ### [IntelliJ IDEA Keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
 
