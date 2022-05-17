@@ -136,7 +136,7 @@ Tested on MacBook's touchpad
 ### Adjust letter spacing
 
 ```js
-    "editor.letterSpacing": 0.4, // matches PyCharm with JetBrains Mono
+    "editor.letterSpacing": -0.4, // matches PyCharm with JetBrains Mono
 ```
 
 **Note:** tested with [JetBrains Mono font](#use-jetbrains-mono-font)
